@@ -8,14 +8,18 @@ Our expection is that Area Directors will help us dispatch this to a place to do
 
 ## Background
 
-Network management has evolved towards model-driven programmability using YANG (RFC 7950). While YANG provides a rigorous structure for data, it was designed for deterministic software clients rather than the probabilistic reasoning of Large Language Models (LLMs). Consequently, AI agents often struggle to navigate complex YANG hierarchies, leading to "hallucinations" or incorrect configuration logic.
-The emerging Model Context Protocol (MCP) provides a framework for connecting AI models to external tools and data. However, there is currently no standardized way to map YANG primitives to MCP components (Resources, Tools, and Prompts). This gap results in:
+Network management has evolved towards model-driven programmability using YANG (RFC 7950). While YANG provides a rigorous structure for data, it was designed for
+deterministic software clients rather than the probabilistic reasoning of Large Language Models (LLMs). Consequently, AI agents often struggle to navigate complex
+YANG hierarchies, leading to "hallucinations" or incorrect configuration logic.
+The emerging Model Context Protocol (MCP) provides a framework for connecting AI models to external tools and data. However, there is currently no standardized way
+to map YANG primitives to MCP components (Resources, Tools, and Prompts). This gap results in:
 •	Semantic Ambiguity: LLMs lack the contextual hints needed to understand the operational impact of specific YANG leaves.
 •	Interoperability Barriers: AI agents require custom "glue code" for every vendor's unique interpretation of how a YANG model should be exposed to an AI.
 •	Scaling Issues: Massive YANG schemas exceed LLM context windows, requiring standardized methods for sub-schema discovery and pruning.
 
 ## Goals
-The primary goal of the MAIN Initiative is to provide implementation and operational guidance to make IETF YANG models "AI-ready." This includes defining a standardized framework for mapping between YANG data structures and AI-native interfaces to enable autonomous network operations.
+The primary goal of the MAIN Initiative is to provide implementation and operational guidance to make IETF YANG models "AI-ready." This includes defining a
+standardized framework for mapping between YANG data structures and AI-native interfaces to enable autonomous network operations.
 The MAIN Initiative will focus on:
 1.	Structural Mapping: Defining how YANG data nodes map to MCP URIs (Resources) and how rpc and action statements map to MCP Tool schemas.
 2.	Semantic Metadata: Utilizing YANG description and extension statements to provide the natural language context required by LLMs.
