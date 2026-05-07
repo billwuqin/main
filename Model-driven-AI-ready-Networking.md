@@ -1,6 +1,7 @@
-# Model-driven AI-ready Networking (main) Work
+# Model-driven AI-ready Networking (MAIN) Work
 
-This page provides a short description of a proposed IETF work.
+This page provides a short description of a proposed IETF MAIN work. The MAIN work will explore how to make IETF developed YANG AI ready and better consumed
+by AI Agent and Large AI Models.
 The intention of this page is to capture the scope of the MAIN work that the proponents believes is in IETF scope and needs special attention.
 Our expection is that Area Directors will help us dispatch this to a place to do the work:
 - an existing working group
