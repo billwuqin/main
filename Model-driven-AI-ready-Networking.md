@@ -16,9 +16,9 @@ YANG hierarchies, leading to "hallucinations" or incorrect configuration logic.
 The emerging Model Context Protocol (MCP) provides a framework for connecting AI models to external tools and data. However, there is currently no standardized way
 to map YANG primitives to MCP components (Resources, Tools, and Prompts). This gap results in:
 
-•	Semantic Ambiguity: LLMs lack the contextual hints needed to understand the operational impact of specific YANG leaves.
-•	Interoperability Barriers: AI agents require custom "glue code" for every vendor's unique interpretation of how a YANG model should be exposed to an AI.
-•	Scaling Issues: Massive YANG schemas exceed LLM context windows, requiring standardized methods for sub-schema discovery and pruning.
+- Semantic Ambiguity: LLMs lack the contextual hints needed to understand the operational impact of specific YANG leaves.
+- Interoperability Barriers: AI agents require custom "glue code" for every vendor's unique interpretation of how a YANG model should be exposed to an AI.
+- Scaling Issues: Massive YANG schemas exceed LLM context windows, requiring standardized methods for sub-schema discovery and pruning.
 
 ## Goals
 The primary goal of the MAIN Initiative is to provide implementation and operational guidance to make IETF YANG models "AI-ready." This includes defining a
@@ -32,8 +32,8 @@ Protocol changes or extensions to the YANG language itself remain the responsibi
 ## Program of Work
 The MAIN Initiative is expected to fullfill the following tasks:
 
-•	Problem Statement: Develop a document describing the challenges of consuming raw YANG models in LLM-based agentic loops.
-•	Mapping Specification: Define the formal translation rules to map YANG nodes to MCP Resources and rpc/action statements to MCP Tools.
-•	Semantic Enrichment Guidance: Provide best practices for using YANG description and extension statements to provide the natural language "anchors" LLMs require.
-•	Standardized Prompts: Develop a library of reusable "Prompt Templates" for common network tasks (e.g., "Troubleshoot BGP peering") that utilize standardized
+- Problem Statement: Develop a document describing the challenges of consuming raw YANG models in LLM-based agentic loops.
+- Mapping Specification: Define the formal translation rules to map YANG nodes to MCP Resources and rpc/action statements to MCP Tools.
+- Semantic Enrichment Guidance: Provide best practices for using YANG description and extension statements to provide the natural language "anchors" LLMs require.
+- Standardized Prompts: Develop a library of reusable "Prompt Templates" for common network tasks (e.g., "Troubleshoot BGP peering") that utilize standardized
   YANG-to-MCP mappings.
