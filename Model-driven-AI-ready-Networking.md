@@ -24,8 +24,8 @@ to map YANG primitives to MCP components (Resources, Tools, and Prompts). This g
 The primary goal of the MAIN Initiative is to provide implementation and operational guidance to make IETF YANG models "AI-ready." This includes defining a
 standardized framework for mapping between YANG data structures and AI-native interfaces to enable autonomous network operations.
 The MAIN Initiative will focus on:
-- Structural Mapping: Defining how YANG data nodes map to MCP URIs (Resources) and how rpc and action statements map to MCP Tool schemas.
-- Semantic Metadata: Utilizing YANG Model to provide the natural language context or constraint information required by LLMs.
+- Structural Mapping: Defining how YANG Data Nodes map to MCP URIs (Resources) and how RPC and Action statements map to MCP Tool schemas.
+- Semantic Metadata: Utilizing YANG Model to provide the Natural Language Context or Constraint information required by LLMs.
 - Discovery: Developing a mechanism for AI agents to dynamically discover supported YANG modules via MCP.
 Protocol changes or extensions to the YANG language itself remain the responsibility of the NETCONF WG and NETMOD WG respectively.
 
