@@ -34,6 +34,6 @@ The MAIN Initiative is expected to fullfill the following tasks:
 
 - Problem Statement: Develop a document describing the challenges of consuming raw YANG models in LLM-based agentic loops.
 - Mapping Specification: Define the formal translation rules to map YANG nodes to MCP Resources and rpc/action statements to MCP Tools.
-- Semantic Enrichment Guidance: Provide best practices for using YANG description and extension statements to provide the natural language "anchors" LLMs require.
+- Semantic Enrichment Guidance: Provide best practices for using YANG model to provide the natural language "anchors" LLMs require.
 - Standardized Prompts: Develop a library of reusable "Prompt Templates" for common network tasks (e.g., "Troubleshoot BGP peering") that utilize standardized
   YANG-to-MCP mappings.
