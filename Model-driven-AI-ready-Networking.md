@@ -4,6 +4,7 @@ This page provides a short description of a proposed IETF MAIN work. The MAIN wo
 by AI Agent and Large AI Models.
 The intention of this page is to capture the scope of the MAIN work that the proponents believes is in IETF scope and needs special attention.
 Our expection is that Area Directors will help us dispatch this to a place to do the work:
+
 - an existing working group
 - a new working group
 
@@ -14,6 +15,7 @@ deterministic software clients rather than the probabilistic reasoning of Large 
 YANG hierarchies, leading to "hallucinations" or incorrect configuration logic.
 The emerging Model Context Protocol (MCP) provides a framework for connecting AI models to external tools and data. However, there is currently no standardized way
 to map YANG primitives to MCP components (Resources, Tools, and Prompts). This gap results in:
+
 •	Semantic Ambiguity: LLMs lack the contextual hints needed to understand the operational impact of specific YANG leaves.
 •	Interoperability Barriers: AI agents require custom "glue code" for every vendor's unique interpretation of how a YANG model should be exposed to an AI.
 •	Scaling Issues: Massive YANG schemas exceed LLM context windows, requiring standardized methods for sub-schema discovery and pruning.
@@ -23,12 +25,13 @@ The primary goal of the MAIN Initiative is to provide implementation and operati
 standardized framework for mapping between YANG data structures and AI-native interfaces to enable autonomous network operations.
 The MAIN Initiative will focus on:
 1.	Structural Mapping: Defining how YANG data nodes map to MCP URIs (Resources) and how rpc and action statements map to MCP Tool schemas.
-2.	Semantic Metadata: Utilizing YANG description and extension statements to provide the natural language context required by LLMs.
+2.	Semantic Metadata: Utilizing YANG Model to provide the natural language context or constraint information required by LLMs.
 3.	Discovery: Developing a mechanism for AI agents to dynamically discover supported YANG modules via MCP.
 Protocol changes or extensions to the YANG language itself remain the responsibility of the NETCONF WG and NETMOD WG respectively.
 
 ## Program of Work
 The MAIN Initiative is expected to fullfill the following tasks:
+
 •	Problem Statement: Develop a document describing the challenges of consuming raw YANG models in LLM-based agentic loops.
 •	Mapping Specification: Define the formal translation rules to map YANG nodes to MCP Resources and rpc/action statements to MCP Tools.
 •	Semantic Enrichment Guidance: Provide best practices for using YANG description and extension statements to provide the natural language "anchors" LLMs require.
